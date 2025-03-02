@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 1rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    background-color: #8ab4f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.logo {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.logo .letter {
+    display: inline-block;
+}
+
+.logo .letter:nth-child(1) { color: #4285f4; }
+.logo .letter:nth-child(2) { color: #ea4335; }
+.logo .letter:nth-child(3) { color: #fbbc05; }
+.logo .letter:nth-child(4) { color: #4285f4; }
+.logo .letter:nth-child(5) { color: #34a853; }
+.logo .letter:nth-child(6) { color: #ea4335; }
+
+/* Search box styles */
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    margin: 0 auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 1rem;
+}
+
+.search-box:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: transparent;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.search-icon, .mic-icon {
+    color: #9aa0a6;
+    font-size: 1.2rem;
+}
+
+/* Shortcuts styles */
+.shortcuts {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.shortcut-title {
+    color: #5f6368;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.shortcuts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.shortcut {
+    text-align: center;
+    cursor: pointer;
+}
+
+.shortcut-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #f1f3f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-size: 1.5rem;
+    color: #5f6368;
+}
+
+.shortcut-name {
+    font-size: 0.8rem;
+    color: #5f6368;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer a {
+    color: #70757a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
