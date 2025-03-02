@@ -3,61 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab</title>
+    <title>Messenger</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-items">
-            <a href="#" class="nav-item">Gmail</a>
-            <a href="#" class="nav-item">Images</a>
-            <a href="#" class="nav-item"><i class="fas fa-th"></i></a>
-            <a href="#" class="nav-item profile">T</a>  
-        </div>
-    </nav>
-
-    <main class="main-content">
-        <div class="logo">
-            <span class="letter">G</span>
-            <span class="letter">o</span>
-            <span class="letter">o</span>
-            <span class="letter">g</span>
-            <span class="letter">l</span>
-            <span class="letter">e</span>
-        </div>
-        
-        <div class="search-container">
-            <div class="search-box">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" class="search-input" placeholder="Search Google or type a URL">
-                <i class="fas fa-microphone mic-icon"></i>
+    <div class="messenger">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Me&background=0084ff&color=fff" alt="Profile" class="profile-img">
+                    <span>My Account</span>
+                </div>
+                <div class="header-icons">
+                    <i class="fas fa-edit"></i>
+                </div>
             </div>
-        </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search messages">
+            </div>
 
-        <div class="shortcuts">
-            <div class="shortcut-title">Shortcuts</div>
-            <div class="shortcuts-grid">
-                <div class="shortcut">
-                    <div class="shortcut-icon">+</div>
-                    <div class="shortcut-name">Add shortcut</div>
+            <div class="chat-list">
+                <div class="chat-item active">
+                    <img src="https://ui-avatars.com/api/?name=Kinza+Qadir&background=ff69b4&color=fff" alt="Kinza">
+                    <div class="chat-info">
+                        <h4>Kinza Qadir Baksh</h4>
+                        <p>Hey, how are you? 👋</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="time">2m</span>
+                        <span class="status online"></span>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <img src="https://ui-avatars.com/api/?name=Tanveer+Iqbal&background=4CAF50&color=fff" alt="Tanveer">
+                    <div class="chat-info">
+                        <h4>Tanveer Iqbal</h4>
+                        <p>Let's meet tomorrow!</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="time">1h</span>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <img src="https://ui-avatars.com/api/?name=Dano&background=9C27B0&color=fff" alt="Dano">
+                    <div class="chat-info">
+                        <h4>Dano</h4>
+                        <p>Great idea! 🎉</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="time">3h</span>
+                        <span class="unread">2</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-left">
-            <a href="#">About</a>
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search works</a>
+        <!-- Main Chat Area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-contact">
+                    <img src="https://ui-avatars.com/api/?name=Kinza+Qadir&background=ff69b4&color=fff" alt="Kinza">
+                    <div class="contact-info">
+                        <h3>Kinza Qadir Baksh</h3>
+                        <span class="status">Active now</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+
+            <div class="messages">
+                <div class="message received">
+                    <img src="https://ui-avatars.com/api/?name=Kinza+Qadir&background=ff69b4&color=fff" alt="Kinza">
+                    <div class="message-content">
+                        <p>Hey! How are you doing?</p>
+                        <span class="time">10:30 AM</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Hi! I'm doing great, thanks for asking! How about you?</p>
+                        <span class="time">10:31 AM</span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <img src="https://ui-avatars.com/api/?name=Kinza+Qadir&background=ff69b4&color=fff" alt="Kinza">
+                    <div class="message-content">
+                        <p>I'm good too! Want to grab coffee later? ☕</p>
+                        <span class="time">10:32 AM</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Sure! That sounds great! 😊</p>
+                        <span class="time">10:33 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-input">
+                <div class="input-actions">
+                    <i class="far fa-image"></i>
+                    <i class="far fa-smile"></i>
+                </div>
+                <input type="text" placeholder="Message...">
+                <div class="input-actions">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+            </div>
         </div>
-        <div class="footer-right">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
